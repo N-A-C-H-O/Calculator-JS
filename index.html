@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <!--Calculator container-->
+    <div class="container">
+        <div class="calculator">
+            <!--All buttons and display screen-->
+            <input type="text" id="display" readonly placeholder="0">
+            <button class="btn" onclick="clearDisplay()" id="Clear">C</button>
+            <button class="btn" onclick="deleteDisplay()" id="DEL">DEL</button>
+            <button class="btn" onclick="calculate('%')" id="%">%</button>
+            <button class="btn" onclick="calculate('/')" id="/">/</button>
+            <button class="btn" onclick="calculate(7)" id="7">7</button>
+            <button class="btn" onclick="calculate(8)" id="8">8</button>
+            <button class="btn" onclick="calculate(9)" id="9">9</button>
+            <button class="btn" onclick="calculate('*')" id="*">*</button>
+            <button class="btn" onclick="calculate(4)" id="4">4</button>
+            <button class="btn" onclick="calculate(5)" id="5">5</button>
+            <button class="btn" onclick="calculate(6)" id="6">6</button>
+            <button class="btn" onclick="calculate('-')" id="-">-</button>
+            <button class="btn" onclick="calculate(1)" id="1">1</button>
+            <button class="btn" onclick="calculate(3)" id="3">3</button>
+            <button class="btn" onclick="calculate(2)" id="2">2</button>
+            <button class="btn" onclick="calculate('+')" id="+">+</button>
+            <button class="btn" onclick="calculate('.')" id=".">.</button>
+            <button class="btn" onclick="calculate(0)" id="0">0</button>
+            <button class="btn" onclick="result()" id="equal">=</button>
+        </div>
+    </div>
+    <footer>
+        <div id="copyright">
+            <p id="copyright-text">Developed by <span id="author">Ignacio Kruchowski</span></p>
+        </div>
+        <div class="social">
+            <ul class="social-list">
+                <li><a href="https://www.github.com/N-A-C-H-O" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+                <li><a href="https://www.twitter.com/Ignakrucho" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/ignacio-kruchowski-b6299b22a" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></li>
+            </ul>
+        </div>
+    </footer>
+    <script src="https://kit.fontawesome.com/41d1e297c9.js" crossorigin="anonymous"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

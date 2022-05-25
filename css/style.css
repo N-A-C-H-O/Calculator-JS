@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans&display=swap');
+
+/* Plus Jakarta Sans', sans-serif; */
+
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background-color: #7371fcaf;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 1em;
+    background-color: #a190fa;
+    height: 30em;
+    width: 20em;
+    padding: 1.5em;
+    border-radius: 20px;
+    box-shadow: 1px 10px 69px -14px rgba(0,0,0,0.64);
+    -webkit-box-shadow: 1px 10px 69px -14px rgba(0,0,0,0.64);
+    -moz-box-shadow: 1px 10px 69px -14px rgba(0,0,0,0.64);
+}
+
+#equal {
+    grid-column: span 2;
+}
+
+#display {
+    grid-column: span 4;
+    background-color: #d5cbfcfb;
+    text-align: right;
+    padding-right: 1.5em;
+    font-size: 1.7em;
+    border-radius: 20px;
+    border: none;
+    height: 4em;
+}
+
+#display:focus {
+    outline: none;
+}
+
+.btn {
+    font-size: 1.3em;
+    border-radius: 35px;
+    border: none;
+    display: block;
+    transition: .2s;
+    background-color: #F5EFFF;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    box-shadow: 23px 10px 92px -20px rgba(0,0,0,0.64);
+    -webkit-box-shadow: 23px 10px 92px -20px rgba(0,0,0,0.64);
+    -moz-box-shadow: 23px 10px 92px -20px rgba(0,0,0,0.64);
+    background-color: #efe6fd;
+}
+
+#copyright {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    width: 24%;
+    padding: 20px;
+}
+
+#copyright-text {
+    overflow: hidden;
+    border-right: .15em solid rgb(2, 2, 2); 
+    white-space: nowrap; 
+    margin: 0 auto;
+    letter-spacing: .15em;
+    animation: typing 7.5s steps(40, end) infinite, blink-caret .65s step-end infinite;
+    font-size: 1.3em;
+    color: white;
+}
+
+#author {
+    list-style-type: none;
+    color: #d5cbfcfb;
+    display: inline-block;
+
+}
+
+.social-list {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.social-list li {
+    margin: 1.5em;
+
+}
+
+.social-list li a {
+    text-decoration: none;
+    font-size: 2em;
+    color: #7371FC;
+}
+
+/*Typewriter Effect*/
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: rgb(29, 29, 29); }
+}
+
